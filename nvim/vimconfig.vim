@@ -24,7 +24,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Colors
 " Plug 'ayu-theme/ayu-vim'
 Plug 'tjdevries/colorbuddy.nvim'
-Plug 'miloshadzic/hemisu.nvim'
+" Plug 'miloshadzic/hemisu.nvim'
+Plug 'noahfrederick/vim-hemisu'
+Plug 'Mofiqul/dracula.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -55,8 +57,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 
 " set termguicolors
-let ayucolor="dark"
-" colorscheme ayu
+colorscheme hemisu
 
 set completeopt=menu,menuone,noselect
 
