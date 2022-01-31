@@ -75,6 +75,9 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <silent> vv <C-w>v
 
+" How to exit vim terminal > How to exit vim
+tnoremap <Esc> <C-\><C-n>
+
 nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>g <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>b <cmd>lua require('telescope.builtin').buffers()<cr>
