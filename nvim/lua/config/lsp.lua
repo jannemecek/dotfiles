@@ -58,3 +58,4 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 require'lspconfig'.sourcekit.setup{}
 require'lspconfig'.solargraph.setup{}
+require'lspconfig'.tailwindcss.setup{}

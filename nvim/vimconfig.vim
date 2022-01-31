@@ -11,6 +11,7 @@ set wildignore=*/tmp/*,*.so,*.swp,*.zip,vendor/bundle/**,*/bin/*,node_modules
 " Change the way splits open by default
 set splitbelow
 set splitright
+set foldmethod=syntax
 
 call plug#begin()
 
