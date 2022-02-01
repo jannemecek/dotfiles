@@ -66,7 +66,7 @@ colorscheme hemisu
 set completeopt=menu,menuone,noselect
 
 " Remaps
-let mapleader = ","
+let mapleader = " "
 
 nnoremap Q :quit<CR>
 nnoremap W :write<CR>
