@@ -12,6 +12,7 @@ set wildignore=*/tmp/*,*.so,*.swp,*.zip,vendor/bundle/**,*/bin/*,node_modules
 set splitbelow
 set splitright
 set foldmethod=syntax
+set nofoldenable
 
 call plug#begin()
 
@@ -25,12 +26,13 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Colors
 " Plug 'ayu-theme/ayu-vim'
 Plug 'tjdevries/colorbuddy.nvim'
-" Plug 'miloshadzic/hemisu.nvim'
-Plug 'noahfrederick/vim-hemisu'
+Plug 'miloshadzic/hemisu.nvim'
 Plug 'Mofiqul/dracula.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+
 Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -57,13 +59,14 @@ Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
 
-" set termguicolors
+set termguicolors
+syntax on
 colorscheme hemisu
 
 set completeopt=menu,menuone,noselect
 
 " Remaps
-let mapleader = " "
+let mapleader = ","
 
 nnoremap Q :quit<CR>
 nnoremap W :write<CR>
@@ -76,7 +79,7 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <silent> vv <C-w>v
 
 " How to exit vim terminal > How to exit vim
-tnoremap <Esc> <C-\><C-n>
+tnoremap <leader><Esc> <C-\><C-n>
 
 nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>g <cmd>lua require('telescope.builtin').live_grep()<cr>

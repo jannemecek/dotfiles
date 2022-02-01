@@ -6,5 +6,6 @@ cmd('source ~/.config/nvim/vimconfig.vim')
 require'config/lsp'
 require'config/lualine'
 require'config/telescope'
+require 'hemisu'
 
 require'nvim-tree'.setup()
