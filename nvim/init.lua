@@ -9,3 +9,6 @@ require'config/telescope'
 require 'hemisu'
 
 require'nvim-tree'.setup()
+
+local neogit = require('neogit')
+neogit.setup {}

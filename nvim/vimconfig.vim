@@ -20,7 +20,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-
+Plug 'nvim-telescope/telescope-live-grep-raw.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " Colors
@@ -57,6 +57,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'kyazdani42/nvim-tree.lua'
 
+Plug 'TimUntersberger/neogit'
+
 call plug#end()
 
 set termguicolors
@@ -82,7 +84,7 @@ nnoremap <silent> vv <C-w>v
 tnoremap <leader><Esc> <C-\><C-n>
 
 nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>g <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>F <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>b <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>h <cmd>lua require('telescope.builtin').help_tags()<cr>p
 nnoremap <leader>p <cmd>lua require('telescope.builtin').treesitter()<cr>p
@@ -95,6 +97,9 @@ nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
+
+nnoremap <leader>g :Neogit<CR>
+nnoremap <leader>c :Neogit commit<CR>
 
 " vnoremap <leader>p "_dP
 vnoremap <leader>y "+y
