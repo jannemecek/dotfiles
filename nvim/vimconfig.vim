@@ -58,6 +58,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
 Plug 'TimUntersberger/neogit'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
