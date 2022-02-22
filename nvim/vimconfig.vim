@@ -102,7 +102,7 @@ nmap <silent> <leader>l :TestLast<CR>
 nnoremap <leader>g :Neogit<CR>
 nnoremap <leader>c :Neogit commit<CR>
 
-" vnoremap <leader>p "_dP
+vnoremap <leader>p "_dP
 vnoremap <leader>y "+y
 
 vnoremap J :m '>+1<CR>gv=gv
