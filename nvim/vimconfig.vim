@@ -13,56 +13,8 @@ set splitbelow
 set splitright
 set foldmethod=syntax
 set nofoldenable
-
-call plug#begin()
-
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-live-grep-raw.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
-" Colors
-" Plug 'ayu-theme/ayu-vim'
-Plug 'tjdevries/colorbuddy.nvim'
-Plug 'miloshadzic/hemisu.nvim'
-Plug 'Mofiqul/dracula.nvim'
-
-" LSP
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-
-Plug 'nvim-lua/lsp_extensions.nvim'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
-" For luasnip users.
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-
-Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
-
-Plug 'tpope/vim-rails'
-
-Plug 'janko-m/vim-test'
-
-" Plug 'gfontenot/vim-xcode'
-
-Plug 'hoob3rt/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
-
-Plug 'kyazdani42/nvim-tree.lua'
-
-Plug 'TimUntersberger/neogit'
-Plug 'tpope/vim-surround'
-
-call plug#end()
-
 set termguicolors
+set signcolumn=yes
 syntax on
 colorscheme hemisu
 
