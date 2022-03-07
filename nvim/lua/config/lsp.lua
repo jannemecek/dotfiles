@@ -64,6 +64,7 @@ local servers = {
     "solargraph",
     "sourcekit",
     "tailwindcss",
+    "tsserver"
 }
 
 -- Loop through the servers listed above.
