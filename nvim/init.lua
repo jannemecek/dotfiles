@@ -29,6 +29,7 @@ opt.laststatus = 2
 opt.list = true
 opt.listchars = { tab = "▸ ", trail = "▫" }
 opt.mouse = 'a'
+opt.foldenable = false
 opt.ruler = true
 opt.scrolloff = 8
 opt.shiftwidth = 2
