@@ -1,28 +1,3 @@
-set scrolloff=8
-set number
-set relativenumber
-set tabstop=2 softtabstop=2
-set shiftwidth=2
-set expandtab
-set smartindent
-set wildmenu
-set wildmode=longest:list,full
-set wildignore=*/tmp/*,*.so,*.swp,*.zip,vendor/bundle/**,*/bin/*,node_modules
-" Change the way splits open by default
-set splitbelow
-set splitright
-set foldmethod=syntax
-set nofoldenable
-set termguicolors
-set signcolumn=yes
-syntax on
-colorscheme hemisu
-
-set completeopt=menu,menuone,noselect
-
-" Remaps
-let mapleader = " "
-
 nnoremap Q :quit<CR>
 nnoremap W :write<CR>
 
