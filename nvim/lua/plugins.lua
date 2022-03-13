@@ -12,7 +12,8 @@ return require('packer').startup(function()
     requires = {
       {
         'nvim-lua/plenary.nvim',
-        'nvim-telescope/telescope-live-grep-raw.nvim'
+        'nvim-telescope/telescope-live-grep-raw.nvim',
+        'nvim-lua/popup.nvim'
       }
     }
   }
@@ -37,15 +38,26 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip'
 
   use 'hoob3rt/lualine.nvim'
-  use 'kyazdani42/nvim-web-devicons'
 
-  use 'kyazdani42/nvim-tree.lua'
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+        'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      },
+  }
 
   use 'tpope/vim-rails'
 
   use 'TimUntersberger/neogit'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+  }
 
   use 'tpope/vim-surround'
+  use 'windwp/nvim-autopairs'
 
   use 'janko-m/vim-test'
 

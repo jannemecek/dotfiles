@@ -54,3 +54,5 @@ require'config/comment'
 require'hemisu'
 require'nvim-tree'.setup()
 require'neogit'.setup {}
+require'nvim-autopairs'.setup{}
+require'gitsigns'.setup()
