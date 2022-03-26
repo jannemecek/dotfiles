@@ -82,4 +82,6 @@ use {
   use 'janko-m/vim-test'
 
   use 'numToStr/Comment.nvim'
+
+  use 'github/copilot.vim'
 end)
