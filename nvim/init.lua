@@ -179,3 +179,8 @@ require("neo-tree").setup({
     }
   }
 })
+
+vim.g.copilot_filetypes = {
+  ['*'] = true,
+  ['TelescopePrompt'] = false
+}
