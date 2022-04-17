@@ -85,4 +85,6 @@ use {
   use 'numToStr/Comment.nvim'
 
   use 'github/copilot.vim'
+
+  use 'akinsho/toggleterm.nvim'
 end)
