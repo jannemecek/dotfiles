@@ -68,6 +68,7 @@ use {
 
   use 'tpope/vim-rails'
 
+  use 'kdheepak/lazygit.nvim'
   use 'TimUntersberger/neogit'
   use {
     'lewis6991/gitsigns.nvim',

@@ -14,13 +14,9 @@ tnoremap <leader><Esc> <C-\><C-n>
 nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>F <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>b <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>h <cmd>lua require('telescope.builtin').help_tags()<cr>p
-nnoremap <leader>p <cmd>lua require('telescope.builtin').treesitter()<cr>p
+nnoremap <leader>h <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 nnoremap <C-n> :Neotree toggle<cr>
-" nnoremap <C-n> :NvimTreeToggle<CR>
-" nnoremap <leader>r :NvimTreeRefresh<CR>
-" nnoremap <leader>n :NvimTreeFindFile<CR>
 
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
@@ -29,6 +25,7 @@ nmap <silent> <leader>l :TestLast<CR>
 
 nnoremap <leader>g :Neogit<CR>
 nnoremap <leader>c :Neogit commit<CR>
+nnoremap <leader>G :LazyGit<CR>
 
 vnoremap <leader>p "_dP
 vnoremap <leader>y "+y

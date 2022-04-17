@@ -1,4 +1,9 @@
 require('telescope').setup {
+    pickers = {
+        find_files = {
+        hidden = true
+        }
+    },
     extensions = {
         fzy_native = {
             override_generic_sorter = false,
@@ -8,4 +13,4 @@ require('telescope').setup {
 }
 
 require('telescope').load_extension('fzf')
-require('telescope').setup{  defaults = { file_ignore_patterns = { "node_modules" }} }
+require('telescope').setup{  defaults = { file_ignore_patterns = { "node_modules", ".git" }} }
