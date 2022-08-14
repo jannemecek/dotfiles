@@ -57,6 +57,7 @@ require'hemisu'
 require'neogit'.setup {}
 require'nvim-autopairs'.setup{}
 require'gitsigns'.setup()
+require'flutter-tools'.setup{}
 
 vim.g.copilot_filetypes = {
   ['*'] = true,
