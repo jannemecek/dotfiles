@@ -85,7 +85,21 @@ return require('packer').startup(function()
 
   use 'numToStr/Comment.nvim'
 
+  -- Copilot
   use 'github/copilot.vim'
+  use {
+    "zbirenbaum/copilot.lua",
+    event = {"VimEnter"},
+    config = function()
+      vim.defer_fn(function()
+        require("copilot").setup()
+      end, 100)
+    end,
+  }
+  use {
+    "zbirenbaum/copilot-cmp",
+    module = "copilot_cmp",
+  }
 
   use 'akinsho/toggleterm.nvim'
 
