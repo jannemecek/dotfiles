@@ -44,7 +44,7 @@ yabai -m config window_topmost              off
 yabai -m config window_opacity              off
 yabai -m config window_shadow               float
 
-yabai -m config window_border               on
+yabai -m config window_border               off
 yabai -m config window_border_width         2
 yabai -m config active_window_border_color  "${color["focused"]}"
 yabai -m config normal_window_border_color  "${color["normal"]}"
@@ -61,17 +61,19 @@ yabai -m config mouse_action1               move
 yabai -m config mouse_action2               resize
 
 # ===== Rules ==================================
+# Query current windows with
+# yabai -m query --windows --space 2 | jq '.[].id'
 
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
-yabai -m rule --add label="macfeh" app="^macfeh$" manage=off
+yabai -m rule --add label="Tweetbot" app="^Tweetbot$" title="(^$|New Tweet)" manage=off
 yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
 yabai -m rule --add label="App Store" app="^App Store$" manage=off
+yabai -m rule --add label="Simulator" app="^Simulator$" manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
-yabai -m rule --add label="KeePassXC" app="^KeePassXC$" manage=off
+yabai -m rule --add label="1Password" app="^1Password$" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
-yabai -m rule --add label="mpv" app="^mpv$" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
