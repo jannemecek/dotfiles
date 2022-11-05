@@ -78,6 +78,7 @@ yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add label="Digital Color Meter" app="Digital Colou?r Meter" manage=off
 yabai -m rule --add label="ExpressVPN" app="ExpressVPN" manage=off
+yabai -m rule --add label="Raycast" app="Raycast" manage=off
 
 # ===== Signals ================================
 
