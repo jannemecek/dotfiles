@@ -58,6 +58,7 @@ require'neogit'.setup {}
 require'nvim-autopairs'.setup{}
 require'gitsigns'.setup()
 require'flutter-tools'.setup{}
+require'colorizer'.setup()
 
 vim.g.copilot_filetypes = {
   ['*'] = true,
