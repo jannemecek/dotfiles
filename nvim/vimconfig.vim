@@ -16,6 +16,8 @@ nnoremap <leader>F <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>b <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>h <cmd>lua require('telescope.builtin').help_tags()<cr>
 
+nnoremap <leader>s <cmd>exe v:count1 . "TermExec cmd='yarn start'"<cr>
+
 nnoremap <C-n> :Neotree toggle<cr>
 
 nmap <silent> <leader>t :TestNearest<CR>
@@ -27,11 +29,23 @@ nnoremap <leader>g :Neogit<CR>
 nnoremap <leader>c :Neogit commit<CR>
 nnoremap <leader>G :LazyGit<CR>
 
-vnoremap <leader>p "_dP
+nnoremap <Leader>+ :vertical resize +5<CR>
+nnoremap <Leader>- :vertical resize -5<CR>
+nnoremap <Leader>rp :resize 100<CR>
+
+xnoremap <leader>p "_dP
+
+nnoremap <leader>y "+y
 vnoremap <leader>y "+y
+nmap <leader>Y "+Y
+
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+au BufNewFile,BufRead *.sol setfiletype solidity
 
 " Auto
 autocmd BufWritePre * :%s/\s\+$//e
