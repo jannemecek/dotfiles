@@ -3,7 +3,10 @@ return {
     "nvim-neotest/neotest",
     lazy = true,
     dependencies = {
+      "nvim-neotest/nvim-nio",
       "nvim-neotest/neotest-plenary",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter",
       "olimorris/neotest-rspec",
     },
     opts = {
