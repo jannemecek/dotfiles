@@ -40,7 +40,7 @@ lctrl + alt - l : yabai -m window --resize right:50:0; \
                   yabai -m window --resize left:50:0
 
 # Equalize size of windows
-lctrl + alt - e : yabai -m space --balance
+# lctrl + alt - e : yabai -m space --balance
 
 # Enable / Disable gaps in current workspace
 lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
