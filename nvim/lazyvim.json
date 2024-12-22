@@ -1,11 +1,14 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.ai.copilot-chat",
+    "lazyvim.plugins.extras.editor.telescope",
     "lazyvim.plugins.extras.lang.ruby",
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.yaml"
   ],
   "news": {
-    "NEWS.md": "5204"
+    "NEWS.md": "10960"
   },
-  "version": 6
+  "version": 7
 }
