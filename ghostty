@@ -9,3 +9,4 @@ adjust-cell-height = 10%
 font-size = 17
 
 window-colorspace = display-p3
+keybind = shift+enter=text:\n
